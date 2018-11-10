@@ -10,193 +10,213 @@ Background:      dark
 # Palette
 #
 
-Color: brown             #be9873 ~
-Color: darkBlue          #6fbcbd ~
-Color: darkGreen         #719872 ~
-Color: darkGrey          #4b4b4b ~
-Color: darkIndigo        #999abd ~
-Color: darkMedBlue       #007299 ~
-Color: darkOrange        #e19972 ~
-Color: darkPurple        #9b1d72 ~
-Color: darkRed           #9a7372 ~
-Color: darkSalmon        #be7572 ~
-Color: darkSkyBlue       #719cdf ~
-Color: darkTeal          #007173 ~
-Color: darkYellow        #bdbb72 ~
-Color: dimSalmon         #e0bebc ~
-Color: hotGreen          #006f00 ~
-Color: hotPink           #e12672 ~
-Color: hotYellow         #ffdd00 ~
-Color: lessDarkGrey      #565656 ~
-Color: lightBlue         #98bcbd ~
-Color: lightGreen        #98bc99 ~
-Color: lightGrey         #bfbfbf ~
-Color: lightMedBlue      #bce0ff ~
-Color: lightMustard      #dfbc72 ~
-Color: lightOrange       #ffde99 ~
-Color: lightPink         #e17899 ~
-Color: lightRed          #e09b99 ~
-Color: lightSalmon       #ffbfbd ~
-Color: lightSkyBlue      #97dddf ~
-Color: lightYellow       #dedd99 ~
-Color: medGrey           #6b6b6b ~
-Color: medLightGrey      #727272 ~
-Color: medSlightGrey     #616161 ~
-Color: prettyDarkYellow  #bdbc98 ~
-Color: reallyDarkGrey    #3f3f3f ~
-Color: reallyDarkPurple  #333233 ~
-Color: reallyDarkRed     #730b00 ~
-Color: reallyDarkYellow  #999872 ~
-Color: reallyLightOrange #ffbd98 ~
-Color: reallyLightPink   #ffc0de ~
-Color: reallyLightYellow #dfdebd ~
-Color: skyBlue           #98bede ~
-Color: superLightPink    #ffdfdf ~
-Color: white             #d9d9d9 ~
+Color: darkTeal           #007173 ~
+Color: lightTeal          #6fbcbd ~
+
+Color: darkBlue           #007299 ~
+Color: lightBlue          #0099bd ~
+
+Color: darkGreyBlue       #7299bc ~
+Color: lightGreyBlue      #98bcbd ~
+
+Color: cyan               #97dddf ~
+
+Color: darkSkyBlue        #719cdf ~
+Color: reallyLightSkyBlue #bce0ff ~
+Color: skyBlue            #98bede ~
+
+Color: darkIndigo         #999abd ~
+
+Color: darkPurple         #9b1d72 ~
+Color: reallyDarkPurple   #333233 ~
+
+Color: hotPink            #e12672 ~
+Color: lightPink          #e17899 ~
+Color: reallyLightPink    #ffc0de ~
+Color: superLightPink     #ffdfdf ~
+
+Color: darkRed            #9a7372 ~
+Color: lightRed           #e09b99 ~
+Color: reallyDarkRed      #730b00 ~
+
+Color: darkOrange         #e19972 ~
+Color: lightOrange        #ffde99 ~
+Color: reallyLightOrange  #ffbd98 ~
+
+Color: darkSalmon         #be7572 ~
+Color: dimSalmon          #e0bebc ~
+Color: lightSalmon        #ffbfbd ~
+
+Color: darkYellow         #bdbb72 ~
+Color: hotYellow          #ffdd00 ~
+Color: lightYellow        #dedd99 ~
+Color: prettyDarkYellow   #bdbc98 ~
+Color: reallyDarkYellow   #999872 ~
+Color: reallyLightYellow  #dfdebd ~
+Color: superLightYellow   #ffffdf ~
+
+Color: lightMustard       #dfbc72 ~
+
+Color: darkGreen          #719872 ~
+Color: hotGreen           #006f00 ~
+Color: lightGreen         #98bc99 ~
+
+# ---
+
+Color: brown              #be9873 ~
+
+Color: darkGrey           #4b4b4b ~
+Color: lessDarkGrey       #565656 ~
+Color: lightGrey          #bfbfbf ~
+Color: medGrey            #6b6b6b ~
+Color: medLightGrey       #727272 ~
+Color: medSlightGrey      #616161 ~
+Color: reallyDarkGrey     #3f3f3f ~
+Color: white              #d9d9d9 ~
 
 #
 # Highlighting
 #
 
-Normal           white             darkGrey
+Normal                   white               darkGrey
 
-LineNr           reallyDarkYellow  lessDarkGrey
-Visual           none              darkTeal
-VisualNOS        none              darkTeal
+LineNr                   reallyDarkYellow    lessDarkGrey
+Visual                   none                darkTeal
+VisualNOS                none                darkTeal
 
-Comment          darkGreen         none
-Number           lightOrange       none
-Float            lightOrange       none
-Boolean          darkIndigo        none
-String           lightBlue         none
-Constant         darkBlue          none
-Character        lightRed          none
-Delimiter        brown             none
-StringDelimiter  brown             none
-Statement        lightGreen        none     bold
+Comment                  darkGreen           none
+Number                   lightOrange         none
+Float                    lightOrange         none
+Boolean                  darkIndigo          none
+String                   lightGreyBlue       none
+Constant                 lightTeal           none
+Character                lightRed            none
+Delimiter                brown               none
+StringDelimiter          brown               none
+Statement                lightGreen          none     bold
 
 # if else end
-Conditional      skyBlue           none
+Conditional              skyBlue             none
 
 # while end
-Repeat           darkSkyBlue       none
-Todo             hotPink           reallyDarkPurple
-Function         reallyLightYellow none
+Repeat                   darkSkyBlue         none
+Todo                     hotPink             reallyDarkPurple
+Function                 reallyLightYellow   none
 
 # Macros
-Define           darkOrange        none
-Macro            darkOrange        none
-Include          darkOrange        none
-PreCondit        darkOrange        none
+Define                   darkOrange          none
+Macro                    darkOrange          none
+Include                  darkOrange          none
+PreCondit                darkOrange          none
 
 # #!
-PreProc          darkYellow        none
+PreProc                  darkYellow          none
 
 # @abc
-Identifier       lightSalmon       none
+Identifier               lightSalmon         none
 
 # AAA Abc
-Type             lightMustard      none
+Type                     lightMustard        none
 
 # + - * / <<
-Operator         lightYellow       none
+Operator                 lightYellow         none
 
 # super yield
-Keyword          lightPink         none
+Keyword                  lightPink           none
 
 # raise
-Exception        hotPink           none
+Exception                hotPink             none
 
-Structure        lightSkyBlue      none
+Structure                cyan                none
 
-Error            none              reallyDarkRed
-ErrorMsg         none              reallyDarkRed
-Underlined       lightSalmon       none
+Error                    none                reallyDarkRed
+ErrorMsg                 none                reallyDarkRed
+Underlined               lightSalmon         none
 
-ColorColumn      none              reallyDarkGrey
+ColorColumn              none                reallyDarkGrey
 
-CursorLine       none              reallyDarkGrey
-CursorLineNr     darkSalmon        reallyDarkGrey
-CursorColumn     none              reallyDarkGrey
+CursorLine               none                reallyDarkGrey
+CursorLineNr             darkSalmon          reallyDarkGrey
+CursorColumn             none                reallyDarkGrey
 
-Directory        reallyLightYellow none
+Directory                reallyLightYellow   none
 
-DiffAdd          none              hotGreen
-DiffDelete       none              darkRed
-DiffChange       none              medGrey
-DiffText         none              reallyDarkRed
+DiffAdd                  none                hotGreen
+DiffDelete               none                darkRed
+DiffChange               none                medGrey
+DiffText                 none                reallyDarkRed
 
-VertSplit        reallyDarkPurple  reallyDarkPurple
-Folded           reallyDarkYellow  lessDarkGrey
+VertSplit                reallyDarkPurple    reallyDarkPurple
+Folded                   reallyDarkYellow    lessDarkGrey
 
-FoldColumn       prettyDarkYellow  lessDarkGrey
+FoldColumn               prettyDarkYellow    lessDarkGrey
 
-MatchParen       none              medGrey
+MatchParen               none                medGrey
 
 # -- INSERT --
-ModeMsg          darkOrange        none
+ModeMsg                  darkOrange          none
 
 # let &showbreak = '> '
-NonText          medLightGrey      none
+NonText                  medLightGrey        none
 
-MoreMsg          darkOrange        none
+MoreMsg                  darkOrange          none
 
 # Popup menu
-Pmenu            lessDarkGrey      superLightPink
-PmenuSel         white             darkPurple
-PmenuSbar        none              darkGreen
-PmenuThumb       none              darkTeal
+Pmenu                    lessDarkGrey        superLightPink
+PmenuSel                 white               darkPurple
+PmenuSbar                none                darkGreen
+PmenuThumb               none                darkTeal
 
-Search           white             darkMedBlue
-IncSearch        lessDarkGrey      hotYellow
+Search                   white               darkBlue
+IncSearch                lessDarkGrey        hotYellow
 
 # String delimiter, interpolation
-Special          reallyLightOrange none
+Special                  reallyLightOrange   none
 
 # :map, listchars
-SpecialKey       medLightGrey      none
+SpecialKey               medLightGrey        none
 
 # Spelling
 verbatim
 if !has('gui_running')
 endverbatim
-SpellBad         none              none     underline
-SpellCap         none              none     underline
-SpellLocal       none              none     underline
-SpellRare        none              none     underline
+SpellBad   none none underline
+SpellCap   none none underline
+SpellLocal none none underline
+SpellRare  none none underline
 verbatim
 else
 endverbatim
-SpellBad         none              none     undercurl guisp=lightPink
-SpellCap         none              none     undercurl guisp=skyBlue
-SpellLocal       none              none     undercurl guisp=lightMedBlue
-SpellRare        none              none     undercurl guisp=reallyLightPink
+SpellBad   none none undercurl guisp=lightPink
+SpellCap   none none undercurl guisp=skyBlue
+SpellLocal none none undercurl guisp=reallyLightSkyBlue
+SpellRare  none none undercurl guisp=reallyLightPink
 verbatim
 endif
 endverbatim
 
-StatusLine       reallyLightYellow darkRed  bold
-StatusLineNC     reallyLightYellow medSlightGrey
-StatusLineTerm   ->                StatusLine
-StatusLineTermNC ->                StatusLineNC
-TabLineFill      none              medSlightGrey
-TabLineSel       reallyLightYellow darkTeal bold
-TabLine          lightGrey         medLightGrey
-WildMenu         darkRed           hotYellow
+StatusLine               reallyLightYellow   darkRed  bold
+StatusLineNC             reallyLightYellow   medSlightGrey
+StatusLineTerm           ->                  StatusLine
+StatusLineTermNC         ->                  StatusLineNC
+TabLineFill              none                medSlightGrey
+TabLineSel               reallyLightYellow   darkTeal bold
+TabLine                  lightGrey           medLightGrey
+WildMenu                 darkRed             hotYellow
 
 # :set all
-Title            dimSalmon         none
+Title                    dimSalmon           none
 
-Question         lightMustard      none
+Question                 lightMustard        none
 
 # Search hit bottom
-WarningMsg       lightMustard      none
+WarningMsg               lightMustard        none
 
 # Sign column
-SignColumn       darkOrange        darkGrey
+SignColumn               darkOrange          darkGrey
 
-Conceal          medSlightGrey     none
-Ignore           medGrey           darkGrey
+Conceal                  medSlightGrey       none
+Ignore                   medGrey             darkGrey
 
 # Neovim terminal colours
 verbatim
@@ -218,6 +238,23 @@ let g:terminal_color_14 = '#96ddde'
 let g:terminal_color_15 = '#e9e9e9'
 endverbatim
 
+# Ruby
+verbatim
+let ruby_operators = 1
+endverbatim
+rubyClass                lightBlue           none
+rubyRegexp               lightYellow         none
+rubyRegexpDelimiter      lightYellow         none
+rubyArrayDelimiter       darkGreyBlue        none
+rubyBlockParameterList   lightYellow         none
+rubyCurlyBlockDelimiter  prettyDarkYellow    none
+rubyPredefinedIdentifier superLightYellow    none
+
 #
 # Syntax
 #
+
+vimFunction       -> Function
+vimUserFunc       -> Function
+vimIsCommand      -> Statement
+vimAutoCmdSfxList -> Type

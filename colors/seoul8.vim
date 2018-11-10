@@ -2,7 +2,7 @@
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
 " Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
 " License:      Vim License (see `:help license`)
-" Last Updated: Sat 10 Nov 11:42:15 2018
+" Last Updated: Sat 10 Nov 12:22:25 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -116,127 +116,153 @@ let g:terminal_color_12 = '#badcfb'
 let g:terminal_color_13 = '#ffbebc'
 let g:terminal_color_14 = '#96ddde'
 let g:terminal_color_15 = '#e9e9e9'
+let ruby_operators = 1
+hi rubyClass ctermfg=38 ctermbg=NONE guifg=#0099bd guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi rubyRegexp ctermfg=186 ctermbg=NONE guifg=#dedd99 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi rubyRegexpDelimiter ctermfg=186 ctermbg=NONE guifg=#dedd99 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi rubyArrayDelimiter ctermfg=67 ctermbg=NONE guifg=#7299bc guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi rubyBlockParameterList ctermfg=186 ctermbg=NONE guifg=#dedd99 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi rubyCurlyBlockDelimiter ctermfg=144 ctermbg=NONE guifg=#bdbc98 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi rubyPredefinedIdentifier ctermfg=230 ctermbg=NONE guifg=#ffffdf guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi! link vimFunction Function
+hi! link vimUserFunc Function
+hi! link vimIsCommand Statement
+hi! link vimAutoCmdSfxList Type
 finish
 
 " Background:      dark
-" Color: brown             #be9873 ~
-" Color: darkBlue          #6fbcbd ~
-" Color: darkGreen         #719872 ~
-" Color: darkGrey          #4b4b4b ~
-" Color: darkIndigo        #999abd ~
-" Color: darkMedBlue       #007299 ~
-" Color: darkOrange        #e19972 ~
-" Color: darkPurple        #9b1d72 ~
-" Color: darkRed           #9a7372 ~
-" Color: darkSalmon        #be7572 ~
-" Color: darkSkyBlue       #719cdf ~
-" Color: darkTeal          #007173 ~
-" Color: darkYellow        #bdbb72 ~
-" Color: dimSalmon         #e0bebc ~
-" Color: hotGreen          #006f00 ~
-" Color: hotPink           #e12672 ~
-" Color: hotYellow         #ffdd00 ~
-" Color: lessDarkGrey      #565656 ~
-" Color: lightBlue         #98bcbd ~
-" Color: lightGreen        #98bc99 ~
-" Color: lightGrey         #bfbfbf ~
-" Color: lightMedBlue      #bce0ff ~
-" Color: lightMustard      #dfbc72 ~
-" Color: lightOrange       #ffde99 ~
-" Color: lightPink         #e17899 ~
-" Color: lightRed          #e09b99 ~
-" Color: lightSalmon       #ffbfbd ~
-" Color: lightSkyBlue      #97dddf ~
-" Color: lightYellow       #dedd99 ~
-" Color: medGrey           #6b6b6b ~
-" Color: medLightGrey      #727272 ~
-" Color: medSlightGrey     #616161 ~
-" Color: prettyDarkYellow  #bdbc98 ~
-" Color: reallyDarkGrey    #3f3f3f ~
-" Color: reallyDarkPurple  #333233 ~
-" Color: reallyDarkRed     #730b00 ~
-" Color: reallyDarkYellow  #999872 ~
-" Color: reallyLightOrange #ffbd98 ~
-" Color: reallyLightPink   #ffc0de ~
-" Color: reallyLightYellow #dfdebd ~
-" Color: skyBlue           #98bede ~
-" Color: superLightPink    #ffdfdf ~
-" Color: white             #d9d9d9 ~
-" Normal           white             darkGrey
-" LineNr           reallyDarkYellow  lessDarkGrey
-" Visual           none              darkTeal
-" VisualNOS        none              darkTeal
-" Comment          darkGreen         none
-" Number           lightOrange       none
-" Float            lightOrange       none
-" Boolean          darkIndigo        none
-" String           lightBlue         none
-" Constant         darkBlue          none
-" Character        lightRed          none
-" Delimiter        brown             none
-" StringDelimiter  brown             none
-" Statement        lightGreen        none     bold
-" Conditional      skyBlue           none
-" Repeat           darkSkyBlue       none
-" Todo             hotPink           reallyDarkPurple
-" Function         reallyLightYellow none
-" Define           darkOrange        none
-" Macro            darkOrange        none
-" Include          darkOrange        none
-" PreCondit        darkOrange        none
-" PreProc          darkYellow        none
-" Identifier       lightSalmon       none
-" Type             lightMustard      none
-" Operator         lightYellow       none
-" Keyword          lightPink         none
-" Exception        hotPink           none
-" Structure        lightSkyBlue      none
-" Error            none              reallyDarkRed
-" ErrorMsg         none              reallyDarkRed
-" Underlined       lightSalmon       none
-" ColorColumn      none              reallyDarkGrey
-" CursorLine       none              reallyDarkGrey
-" CursorLineNr     darkSalmon        reallyDarkGrey
-" CursorColumn     none              reallyDarkGrey
-" Directory        reallyLightYellow none
-" DiffAdd          none              hotGreen
-" DiffDelete       none              darkRed
-" DiffChange       none              medGrey
-" DiffText         none              reallyDarkRed
-" VertSplit        reallyDarkPurple  reallyDarkPurple
-" Folded           reallyDarkYellow  lessDarkGrey
-" FoldColumn       prettyDarkYellow  lessDarkGrey
-" MatchParen       none              medGrey
-" ModeMsg          darkOrange        none
-" NonText          medLightGrey      none
-" MoreMsg          darkOrange        none
-" Pmenu            lessDarkGrey      superLightPink
-" PmenuSel         white             darkPurple
-" PmenuSbar        none              darkGreen
-" PmenuThumb       none              darkTeal
-" Search           white             darkMedBlue
-" IncSearch        lessDarkGrey      hotYellow
-" Special          reallyLightOrange none
-" SpecialKey       medLightGrey      none
-" SpellBad         none              none     underline
-" SpellCap         none              none     underline
-" SpellLocal       none              none     underline
-" SpellRare        none              none     underline
-" SpellBad         none              none     undercurl guisp=lightPink
-" SpellCap         none              none     undercurl guisp=skyBlue
-" SpellLocal       none              none     undercurl guisp=lightMedBlue
-" SpellRare        none              none     undercurl guisp=reallyLightPink
-" StatusLine       reallyLightYellow darkRed  bold
-" StatusLineNC     reallyLightYellow medSlightGrey
-" StatusLineTerm   ->                StatusLine
-" StatusLineTermNC ->                StatusLineNC
-" TabLineFill      none              medSlightGrey
-" TabLineSel       reallyLightYellow darkTeal bold
-" TabLine          lightGrey         medLightGrey
-" WildMenu         darkRed           hotYellow
-" Title            dimSalmon         none
-" Question         lightMustard      none
-" WarningMsg       lightMustard      none
-" SignColumn       darkOrange        darkGrey
-" Conceal          medSlightGrey     none
-" Ignore           medGrey           darkGrey
+" Color: darkTeal           #007173 ~
+" Color: lightTeal          #6fbcbd ~
+" Color: darkBlue           #007299 ~
+" Color: lightBlue          #0099bd ~
+" Color: darkGreyBlue       #7299bc ~
+" Color: lightGreyBlue      #98bcbd ~
+" Color: cyan               #97dddf ~
+" Color: darkSkyBlue        #719cdf ~
+" Color: reallyLightSkyBlue #bce0ff ~
+" Color: skyBlue            #98bede ~
+" Color: darkIndigo         #999abd ~
+" Color: darkPurple         #9b1d72 ~
+" Color: reallyDarkPurple   #333233 ~
+" Color: hotPink            #e12672 ~
+" Color: lightPink          #e17899 ~
+" Color: reallyLightPink    #ffc0de ~
+" Color: superLightPink     #ffdfdf ~
+" Color: darkRed            #9a7372 ~
+" Color: lightRed           #e09b99 ~
+" Color: reallyDarkRed      #730b00 ~
+" Color: darkOrange         #e19972 ~
+" Color: lightOrange        #ffde99 ~
+" Color: reallyLightOrange  #ffbd98 ~
+" Color: darkSalmon         #be7572 ~
+" Color: dimSalmon          #e0bebc ~
+" Color: lightSalmon        #ffbfbd ~
+" Color: darkYellow         #bdbb72 ~
+" Color: hotYellow          #ffdd00 ~
+" Color: lightYellow        #dedd99 ~
+" Color: prettyDarkYellow   #bdbc98 ~
+" Color: reallyDarkYellow   #999872 ~
+" Color: reallyLightYellow  #dfdebd ~
+" Color: superLightYellow   #ffffdf ~
+" Color: lightMustard       #dfbc72 ~
+" Color: darkGreen          #719872 ~
+" Color: hotGreen           #006f00 ~
+" Color: lightGreen         #98bc99 ~
+" Color: brown              #be9873 ~
+" Color: darkGrey           #4b4b4b ~
+" Color: lessDarkGrey       #565656 ~
+" Color: lightGrey          #bfbfbf ~
+" Color: medGrey            #6b6b6b ~
+" Color: medLightGrey       #727272 ~
+" Color: medSlightGrey      #616161 ~
+" Color: reallyDarkGrey     #3f3f3f ~
+" Color: white              #d9d9d9 ~
+" Normal                   white               darkGrey
+" LineNr                   reallyDarkYellow    lessDarkGrey
+" Visual                   none                darkTeal
+" VisualNOS                none                darkTeal
+" Comment                  darkGreen           none
+" Number                   lightOrange         none
+" Float                    lightOrange         none
+" Boolean                  darkIndigo          none
+" String                   lightGreyBlue       none
+" Constant                 lightTeal           none
+" Character                lightRed            none
+" Delimiter                brown               none
+" StringDelimiter          brown               none
+" Statement                lightGreen          none     bold
+" Conditional              skyBlue             none
+" Repeat                   darkSkyBlue         none
+" Todo                     hotPink             reallyDarkPurple
+" Function                 reallyLightYellow   none
+" Define                   darkOrange          none
+" Macro                    darkOrange          none
+" Include                  darkOrange          none
+" PreCondit                darkOrange          none
+" PreProc                  darkYellow          none
+" Identifier               lightSalmon         none
+" Type                     lightMustard        none
+" Operator                 lightYellow         none
+" Keyword                  lightPink           none
+" Exception                hotPink             none
+" Structure                cyan                none
+" Error                    none                reallyDarkRed
+" ErrorMsg                 none                reallyDarkRed
+" Underlined               lightSalmon         none
+" ColorColumn              none                reallyDarkGrey
+" CursorLine               none                reallyDarkGrey
+" CursorLineNr             darkSalmon          reallyDarkGrey
+" CursorColumn             none                reallyDarkGrey
+" Directory                reallyLightYellow   none
+" DiffAdd                  none                hotGreen
+" DiffDelete               none                darkRed
+" DiffChange               none                medGrey
+" DiffText                 none                reallyDarkRed
+" VertSplit                reallyDarkPurple    reallyDarkPurple
+" Folded                   reallyDarkYellow    lessDarkGrey
+" FoldColumn               prettyDarkYellow    lessDarkGrey
+" MatchParen               none                medGrey
+" ModeMsg                  darkOrange          none
+" NonText                  medLightGrey        none
+" MoreMsg                  darkOrange          none
+" Pmenu                    lessDarkGrey        superLightPink
+" PmenuSel                 white               darkPurple
+" PmenuSbar                none                darkGreen
+" PmenuThumb               none                darkTeal
+" Search                   white               darkBlue
+" IncSearch                lessDarkGrey        hotYellow
+" Special                  reallyLightOrange   none
+" SpecialKey               medLightGrey        none
+" SpellBad   none none underline
+" SpellCap   none none underline
+" SpellLocal none none underline
+" SpellRare  none none underline
+" SpellBad   none none undercurl guisp=lightPink
+" SpellCap   none none undercurl guisp=skyBlue
+" SpellLocal none none undercurl guisp=reallyLightSkyBlue
+" SpellRare  none none undercurl guisp=reallyLightPink
+" StatusLine               reallyLightYellow   darkRed  bold
+" StatusLineNC             reallyLightYellow   medSlightGrey
+" StatusLineTerm           ->                  StatusLine
+" StatusLineTermNC         ->                  StatusLineNC
+" TabLineFill              none                medSlightGrey
+" TabLineSel               reallyLightYellow   darkTeal bold
+" TabLine                  lightGrey           medLightGrey
+" WildMenu                 darkRed             hotYellow
+" Title                    dimSalmon           none
+" Question                 lightMustard        none
+" WarningMsg               lightMustard        none
+" SignColumn               darkOrange          darkGrey
+" Conceal                  medSlightGrey       none
+" Ignore                   medGrey             darkGrey
+" rubyClass                lightBlue           none
+" rubyRegexp               lightYellow         none
+" rubyRegexpDelimiter      lightYellow         none
+" rubyArrayDelimiter       darkGreyBlue        none
+" rubyBlockParameterList   lightYellow         none
+" rubyCurlyBlockDelimiter  prettyDarkYellow    none
+" rubyPredefinedIdentifier superLightYellow    none
+" vimFunction       -> Function
+" vimUserFunc       -> Function
+" vimIsCommand      -> Statement
+" vimAutoCmdSfxList -> Type
