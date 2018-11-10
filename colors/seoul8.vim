@@ -2,7 +2,7 @@
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
 " Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
 " License:      Vim License (see `:help license`)
-" Last Updated: Fri  2 Nov 18:38:00 2018
+" Last Updated: Sat 10 Nov 11:42:15 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -100,6 +100,22 @@ hi WarningMsg ctermfg=179 ctermbg=NONE guifg=#dfbc72 guibg=NONE guisp=NONE cterm
 hi SignColumn ctermfg=173 ctermbg=239 guifg=#e19972 guibg=#4b4b4b guisp=NONE cterm=NONE gui=NONE
 hi Conceal ctermfg=241 ctermbg=NONE guifg=#616161 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Ignore ctermfg=242 ctermbg=239 guifg=#6b6b6b guibg=#4b4b4b guisp=NONE cterm=NONE gui=NONE
+let g:terminal_color_0  = '#606060'
+let g:terminal_color_1  = '#df9a98'
+let g:terminal_color_2  = '#719672'
+let g:terminal_color_3  = '#e0bb71'
+let g:terminal_color_4  = '#96bbdc'
+let g:terminal_color_5  = '#dfbdbc'
+let g:terminal_color_6  = '#97bcbc'
+let g:terminal_color_7  = '#d8d8d8'
+let g:terminal_color_8  = '#757575'
+let g:terminal_color_9  = '#e07798'
+let g:terminal_color_10 = '#97bb98'
+let g:terminal_color_11 = '#ffdd98'
+let g:terminal_color_12 = '#badcfb'
+let g:terminal_color_13 = '#ffbebc'
+let g:terminal_color_14 = '#96ddde'
+let g:terminal_color_15 = '#e9e9e9'
 finish
 
 " Background:      dark
