@@ -2,7 +2,7 @@
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
 " Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
 " License:      Vim License (see `:help license`)
-" Last Updated: Sat 10 Nov 12:22:25 2018
+" Last Updated: Sun 11 Nov 20:39:40 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -64,7 +64,7 @@ hi VertSplit ctermfg=236 ctermbg=236 guifg=#333233 guibg=#333233 guisp=NONE cter
 hi Folded ctermfg=101 ctermbg=240 guifg=#999872 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=144 ctermbg=240 guifg=#bdbc98 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
 hi MatchParen ctermfg=NONE ctermbg=242 guifg=NONE guibg=#6b6b6b guisp=NONE cterm=NONE gui=NONE
-hi ModeMsg ctermfg=173 ctermbg=NONE guifg=#e19972 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi ModeMsg ctermfg=173 ctermbg=NONE guifg=#e19972 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi NonText ctermfg=243 ctermbg=NONE guifg=#727272 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi MoreMsg ctermfg=173 ctermbg=NONE guifg=#e19972 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Pmenu ctermfg=240 ctermbg=224 guifg=#565656 guibg=#ffdfdf guisp=NONE cterm=NONE gui=NONE
@@ -94,8 +94,8 @@ hi TabLineFill ctermfg=NONE ctermbg=241 guifg=NONE guibg=#616161 guisp=NONE cter
 hi TabLineSel ctermfg=187 ctermbg=23 guifg=#dfdebd guibg=#007173 guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi TabLine ctermfg=250 ctermbg=243 guifg=#bfbfbf guibg=#727272 guisp=NONE cterm=NONE gui=NONE
 hi WildMenu ctermfg=138 ctermbg=220 guifg=#9a7372 guibg=#ffdd00 guisp=NONE cterm=NONE gui=NONE
-hi Title ctermfg=181 ctermbg=NONE guifg=#e0bebc guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Question ctermfg=179 ctermbg=NONE guifg=#dfbc72 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi Title ctermfg=181 ctermbg=NONE guifg=#e0bebc guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi Question ctermfg=179 ctermbg=NONE guifg=#dfbc72 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi WarningMsg ctermfg=179 ctermbg=NONE guifg=#dfbc72 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi SignColumn ctermfg=173 ctermbg=239 guifg=#e19972 guibg=#4b4b4b guisp=NONE cterm=NONE gui=NONE
 hi Conceal ctermfg=241 ctermbg=NONE guifg=#616161 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -222,7 +222,7 @@ finish
 " Folded                   reallyDarkYellow    lessDarkGrey
 " FoldColumn               prettyDarkYellow    lessDarkGrey
 " MatchParen               none                medGrey
-" ModeMsg                  darkOrange          none
+" ModeMsg                  darkOrange          none     bold
 " NonText                  medLightGrey        none
 " MoreMsg                  darkOrange          none
 " Pmenu                    lessDarkGrey        superLightPink
@@ -249,8 +249,8 @@ finish
 " TabLineSel               reallyLightYellow   darkTeal bold
 " TabLine                  lightGrey           medLightGrey
 " WildMenu                 darkRed             hotYellow
-" Title                    dimSalmon           none
-" Question                 lightMustard        none
+" Title                    dimSalmon           none     bold
+" Question                 lightMustard        none     bold
 " WarningMsg               lightMustard        none
 " SignColumn               darkOrange          darkGrey
 " Conceal                  medSlightGrey       none
