@@ -154,7 +154,7 @@ FoldColumn               prettyDarkYellow    lessDarkGrey
 MatchParen               none                medGrey
 
 # -- INSERT --
-ModeMsg                  darkOrange          none
+ModeMsg                  darkOrange          none     bold
 
 # let &showbreak = '> '
 NonText                  medLightGrey        none
@@ -205,9 +205,9 @@ TabLine                  lightGrey           medLightGrey
 WildMenu                 darkRed             hotYellow
 
 # :set all
-Title                    dimSalmon           none
+Title                    dimSalmon           none     bold
 
-Question                 lightMustard        none
+Question                 lightMustard        none     bold
 
 # Search hit bottom
 WarningMsg               lightMustard        none
