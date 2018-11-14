@@ -2,7 +2,7 @@
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
 " Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
 " License:      Vim License (see `:help license`)
-" Last Updated: Sun 11 Nov 20:41:14 2018
+" Last Updated: Wed 14 Nov 19:26:35 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -124,6 +124,7 @@ hi rubyArrayDelimiter ctermfg=38 ctermbg=NONE guifg=#00bddf guibg=NONE guisp=NON
 hi rubyBlockParameterList ctermfg=94 ctermbg=NONE guifg=#9a7200 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi rubyCurlyBlockDelimiter ctermfg=101 ctermbg=NONE guifg=#999872 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi rubyPredefinedIdentifier ctermfg=88 ctermbg=NONE guifg=#730b00 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi! link HighlightedyankRegion Ignore
 hi! link vimFunction Function
 hi! link vimUserFunc Function
 hi! link vimIsCommand Statement
@@ -257,6 +258,7 @@ finish
 " rubyBlockParameterList   brown               none
 " rubyCurlyBlockDelimiter  reallyDarkYellow    none
 " rubyPredefinedIdentifier superDarkRed        none
+" HighlightedyankRegion -> Ignore
 " vimFunction       -> Function
 " vimUserFunc       -> Function
 " vimIsCommand      -> Statement

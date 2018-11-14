@@ -241,6 +241,9 @@ rubyBlockParameterList   brown               none
 rubyCurlyBlockDelimiter  reallyDarkYellow    none
 rubyPredefinedIdentifier superDarkRed        none
 
+# https://github.com/machakann/vim-highlightedyank
+HighlightedyankRegion -> Ignore
+
 #
 # Syntax
 #

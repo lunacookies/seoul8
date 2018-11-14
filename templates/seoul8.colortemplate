@@ -250,6 +250,9 @@ rubyBlockParameterList   lightYellow         none
 rubyCurlyBlockDelimiter  prettyDarkYellow    none
 rubyPredefinedIdentifier superLightYellow    none
 
+# https://github.com/machakann/vim-highlightedyank
+HighlightedyankRegion -> Ignore
+
 #
 # Syntax
 #
