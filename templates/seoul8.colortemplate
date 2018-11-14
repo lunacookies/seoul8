@@ -253,6 +253,21 @@ rubyPredefinedIdentifier superLightYellow    none
 # https://github.com/machakann/vim-highlightedyank
 HighlightedyankRegion -> Ignore
 
+# vim-gitgutter
+GitGutterAdd             lightGreen          lessDarkGrey
+GitGutterChange          darkSkyBlue         lessDarkGrey
+GitGutterDelete          hotPink             lessDarkGrey
+GitGutterChangeDelete    lightPink           lessDarkGrey
+
+# vim-signify
+SignifySignAdd           lightGreen          lessDarkGrey
+SignifySignChange        darkSkyBlue         lessDarkGrey
+SignifySignDelete        hotPink             lessDarkGrey
+
+# ALE
+ALEErrorSign             hotPink             darkGrey
+ALEWarningSign           lightRed            darkGrey
+
 #
 # Syntax
 #

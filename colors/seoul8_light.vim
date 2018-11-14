@@ -2,7 +2,7 @@
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
 " Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
 " License:      Vim License (see `:help license`)
-" Last Updated: Wed 14 Nov 19:26:35 2018
+" Last Updated: Wed 14 Nov 19:50:57 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -125,6 +125,15 @@ hi rubyBlockParameterList ctermfg=94 ctermbg=NONE guifg=#9a7200 guibg=NONE guisp
 hi rubyCurlyBlockDelimiter ctermfg=101 ctermbg=NONE guifg=#999872 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi rubyPredefinedIdentifier ctermfg=88 ctermbg=NONE guifg=#730b00 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link HighlightedyankRegion Ignore
+hi GitGutterAdd ctermfg=65 ctermbg=252 guifg=#719872 guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi GitGutterChange ctermfg=75 ctermbg=252 guifg=#719cdf guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi GitGutterDelete ctermfg=161 ctermbg=252 guifg=#e12672 guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi GitGutterChangeDelete ctermfg=175 ctermbg=252 guifg=#e17899 guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi SignifySignAdd ctermfg=65 ctermbg=252 guifg=#719872 guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi SignifySignChange ctermfg=75 ctermbg=252 guifg=#719cdf guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi SignifySignDelete ctermfg=161 ctermbg=252 guifg=#e12672 guibg=#d1d0d1 guisp=NONE cterm=NONE gui=NONE
+hi ALEErrorSign ctermfg=161 ctermbg=241 guifg=#e12672 guibg=#616161 guisp=NONE cterm=NONE gui=NONE
+hi ALEWarningSign ctermfg=174 ctermbg=241 guifg=#be7572 guibg=#616161 guisp=NONE cterm=NONE gui=NONE
 hi! link vimFunction Function
 hi! link vimUserFunc Function
 hi! link vimIsCommand Statement
@@ -139,6 +148,7 @@ finish
 " Color: reallyDarkCyan    #007173 ~
 " Color: darkBlue          #0099bd ~
 " Color: darkSkyBlue       #7299bc ~
+" Color: hotGreyBlue       #719cdf ~
 " Color: hotSkyBlue        #0074be ~
 " Color: lightBlue         #70bddf ~
 " Color: lightIndigo       #dfdfff ~
@@ -259,6 +269,15 @@ finish
 " rubyCurlyBlockDelimiter  reallyDarkYellow    none
 " rubyPredefinedIdentifier superDarkRed        none
 " HighlightedyankRegion -> Ignore
+" GitGutterAdd             darkGreen           lessLightGrey
+" GitGutterChange          hotGreyBlue         lessLightGrey
+" GitGutterDelete          reallyHotPink       lessLightGrey
+" GitGutterChangeDelete    lightPink           lessLightGrey
+" SignifySignAdd           darkGreen           lessLightGrey
+" SignifySignChange        hotGreyBlue         lessLightGrey
+" SignifySignDelete        reallyHotPink       lessLightGrey
+" ALEErrorSign             reallyHotPink       darkGrey
+" ALEWarningSign           darkSalmon          darkGrey
 " vimFunction       -> Function
 " vimUserFunc       -> Function
 " vimIsCommand      -> Statement

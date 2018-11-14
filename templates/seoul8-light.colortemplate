@@ -18,6 +18,7 @@ Color: reallyDarkCyan    #007173 ~
 
 Color: darkBlue          #0099bd ~
 Color: darkSkyBlue       #7299bc ~
+Color: hotGreyBlue       #719cdf ~
 Color: hotSkyBlue        #0074be ~
 Color: lightBlue         #70bddf ~
 
@@ -243,6 +244,21 @@ rubyPredefinedIdentifier superDarkRed        none
 
 # https://github.com/machakann/vim-highlightedyank
 HighlightedyankRegion -> Ignore
+
+# vim-gitgutter
+GitGutterAdd             darkGreen           lessLightGrey
+GitGutterChange          hotGreyBlue         lessLightGrey
+GitGutterDelete          reallyHotPink       lessLightGrey
+GitGutterChangeDelete    lightPink           lessLightGrey
+
+# vim-signify
+SignifySignAdd           darkGreen           lessLightGrey
+SignifySignChange        hotGreyBlue         lessLightGrey
+SignifySignDelete        reallyHotPink       lessLightGrey
+
+# ALE
+ALEErrorSign             reallyHotPink       darkGrey
+ALEWarningSign           darkSalmon          darkGrey
 
 #
 # Syntax

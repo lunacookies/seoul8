@@ -2,7 +2,7 @@
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
 " Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
 " License:      Vim License (see `:help license`)
-" Last Updated: Wed 14 Nov 19:26:45 2018
+" Last Updated: Wed 14 Nov 19:51:05 2018
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -125,6 +125,15 @@ hi rubyBlockParameterList ctermfg=186 ctermbg=NONE guifg=#dedd99 guibg=NONE guis
 hi rubyCurlyBlockDelimiter ctermfg=144 ctermbg=NONE guifg=#bdbc98 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi rubyPredefinedIdentifier ctermfg=230 ctermbg=NONE guifg=#ffffdf guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link HighlightedyankRegion Ignore
+hi GitGutterAdd ctermfg=108 ctermbg=240 guifg=#98bc99 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi GitGutterChange ctermfg=75 ctermbg=240 guifg=#719cdf guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi GitGutterDelete ctermfg=161 ctermbg=240 guifg=#e12672 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi GitGutterChangeDelete ctermfg=175 ctermbg=240 guifg=#e17899 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi SignifySignAdd ctermfg=108 ctermbg=240 guifg=#98bc99 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi SignifySignChange ctermfg=75 ctermbg=240 guifg=#719cdf guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi SignifySignDelete ctermfg=161 ctermbg=240 guifg=#e12672 guibg=#565656 guisp=NONE cterm=NONE gui=NONE
+hi ALEErrorSign ctermfg=161 ctermbg=239 guifg=#e12672 guibg=#4b4b4b guisp=NONE cterm=NONE gui=NONE
+hi ALEWarningSign ctermfg=174 ctermbg=239 guifg=#e09b99 guibg=#4b4b4b guisp=NONE cterm=NONE gui=NONE
 hi! link vimFunction Function
 hi! link vimUserFunc Function
 hi! link vimIsCommand Statement
@@ -264,6 +273,15 @@ finish
 " rubyCurlyBlockDelimiter  prettyDarkYellow    none
 " rubyPredefinedIdentifier superLightYellow    none
 " HighlightedyankRegion -> Ignore
+" GitGutterAdd             lightGreen          lessDarkGrey
+" GitGutterChange          darkSkyBlue         lessDarkGrey
+" GitGutterDelete          hotPink             lessDarkGrey
+" GitGutterChangeDelete    lightPink           lessDarkGrey
+" SignifySignAdd           lightGreen          lessDarkGrey
+" SignifySignChange        darkSkyBlue         lessDarkGrey
+" SignifySignDelete        hotPink             lessDarkGrey
+" ALEErrorSign             hotPink             darkGrey
+" ALEWarningSign           lightRed            darkGrey
 " vimFunction       -> Function
 " vimUserFunc       -> Function
 " vimIsCommand      -> Statement
